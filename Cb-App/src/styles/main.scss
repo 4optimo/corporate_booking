@@ -9,9 +9,12 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-//$bootstrap-sass-asset-helper: true;
-//@import "./bootstrap/stylesheets/bootstrap";
+$bootstrap-sass-asset-helper: false;
+@import "shared/theme/ccs-default-theme/bootstrap/stylesheets/bootstrap";
 
+@import "./shared/theme/ccs-default-theme/reset";
 @import "./shared/theme/ccs-default-theme/variables";
 @import "./shared/theme/ccs-default-theme/mixins";
+@import "./shared/theme/ccs-default-theme/typography";
+
 

@@ -1,0 +1,18 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+$base-font-size: 14px !default;
+$chip-font-size : $base-font-size;
+
+
+
+$base-title-size: (
+  x-small : 12px,
+  medium  : 16px,
+  large   : 21px,
+  x-large : 24px,
+  xx-large :28px
+);
