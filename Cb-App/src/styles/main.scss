@@ -17,4 +17,9 @@ $bootstrap-sass-asset-helper: false;
 @import "./shared/theme/ccs-default-theme/mixins";
 @import "./shared/theme/ccs-default-theme/misc";
 
+body{
+  color: #333;
+  background-color: red;
+}
+
 
