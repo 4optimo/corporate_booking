@@ -16,3 +16,17 @@ $base-title-size: (
   x-large : 24px,
   xx-large :28px
 );
+
+@mixin respond-to($breakpoint) {
+  @content;
+  @if map-has-key($breakpoints-typography, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints-typography, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
