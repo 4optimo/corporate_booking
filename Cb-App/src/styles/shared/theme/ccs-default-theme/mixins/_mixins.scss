@@ -1,0 +1,33 @@
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+$breakpoints-typography: (
+  'x-small':  300px,
+  'small'  :  768px,
+  'medium' :  992px,
+  'large'  :  1200px,
+  'x-large':  1440px,
+  'xx-large':  1600px
+);
+@mixin respond-to($breakpoint) {
+  @content;
+  @if map-has-key($breakpoints-typography, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints-typography, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+
+

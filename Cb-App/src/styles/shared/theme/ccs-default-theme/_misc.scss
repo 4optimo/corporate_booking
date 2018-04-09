@@ -1,3 +1,4 @@
+// clear div
 .clear-fix {
   &:after {
     content: "";
@@ -6,3 +7,26 @@
   }
 
 }
+
+.opt_flex{
+      &--container{
+        @include flexbox();
+      }
+      &__item{
+        @include align-self(auto);
+        @include  flex(1 1 auto);
+      }
+}
+
+.opt{
+  &--flex-box{
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include align-content(stretch);
+    @include align-items(flex-start);
+    }
+
+
+}
+

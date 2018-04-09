@@ -14,7 +14,9 @@ $bootstrap-sass-asset-helper: false;
 
 @import "./shared/theme/ccs-default-theme/reset";
 @import "./shared/theme/ccs-default-theme/variables";
-@import "./shared/theme/ccs-default-theme/mixins";
+@import "./shared/theme/ccs-default-theme/mixins/mixins";
+@import "./shared/theme/ccs-default-theme/mixins/flexbox";
+
 @import "./shared/theme/ccs-default-theme/misc";
 
 @import "./shared/theme/ccs-default-theme/alerts";
