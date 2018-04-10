@@ -1,0 +1,16 @@
+.card {
+       width: 100%;
+       height: 95px;
+       background: #f4f4f4;
+       -webkit-transition: all 250ms;
+       -moz-transition: all 250ms;
+       transition: all 250ms;
+       margin-bottom: 25px;
+     // @include box_shadow(1);
+       &:hover {
+    @include box_shadow(3);
+            -webkit-transform: translateY(-5px);
+            -moz-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+   }
