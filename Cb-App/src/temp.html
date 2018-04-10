@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CbApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+  <script>
+    function changediv()
+    {
+
+
+
+      if( document.getElementById("theme_default").className == "theme_blue" ){
+        document.getElementById("theme_default").setAttribute("class", "theme_default");
+
+
+        $('#btnviewdetails').text('theme_blue').button("refresh");
+      }else{
+
+        document.getElementById("theme_default").setAttribute("class", "theme_blue");
+
+
+
+        $("#btnAddProfile").attr('value', 'theme_default');
+      }
+
+
+
+
+    }
+  </script>
+
+  <style>
+
+    body, html {
+      height: 100%;
+    }
+    .theme_default .container {
+      background-color: #40C4FF;
+      color: white;
+      padding: 10px 10px 10px 10px;
+      margin: 5px 5px 5px 5px;
+    }
+
+    .theme_blue .container {
+      background-color: green;
+      color: white;
+      padding: 10px 10px 10px 10px;
+      margin: 5px 5px 5px 5px;
+    }
+    .theme_blue header {
+      background-color: #2196F3;
+      height: 20%;
+
+    }
+    .theme_blue .bodyclass {
+      background-color: #BBDEFB;
+      height: 50%;
+    }
+
+    .theme_blue footer {
+      background-color: #1E88E5;
+      height: 30%;
+
+    }
+
+
+    .theme_default .container {
+      background-color: #FFCCBC;
+      color: white;
+      padding: 10px 10px 10px 10px;
+      margin: 5px 5px 5px 5px;
+    }
+    .theme_default header {
+      background-color: #FF9800;
+      height: 20%;
+
+    }
+    .theme_default .bodyclass {
+      background-color: #FFAB91;
+      height: 50%;
+    }
+
+    .theme_default footer {
+      background-color: #E64A19;
+      height: 30%;
+
+    }
+
+
+    .container{
+      height: 100%;
+    }
+
+
+  </style>
+</head>
+
+<body id="theme_default"  class="theme_default">
+<app-root></app-root>
+
+<div class="container" >
+
+  <button type="button" onclick="changediv()" id="btnAddProfile">change theme</button>
+
+
+
+    <header>
+
+      <p>Some additional header information here</p>
+    </header>
+
+<div class="bodyclass">
+
+  <p>Some additional body txt</p>
+</div>
+
+  <footer>
+    <p>Some additional footer txt</p>
+
+  </footer>
+
+
+
+</div>
+
+
+
+</body>
+</html>

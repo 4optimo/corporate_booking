@@ -27,6 +27,30 @@
     @include align-items(flex-start);
     }
 
+  // Add one of the following classes to any html element to achieve a desired depth of the shadow
+
+
+  &--depth__1{
+    @include box_shadow(1);
+  }
+
+  &--depth__2{
+    @include box_shadow(2);
+  }
+
+  &--depth__3{
+    @include box_shadow(3);
+  }
+
+  &--depth__4{
+    @include box_shadow(4);
+  }
+
+  &--depth__5{
+    @include box_shadow(5);
+  }
 
 }
+
+
 
