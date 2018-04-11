@@ -1,9 +1,54 @@
+/*.btn .selected{
+  border-radius: 12px;
+}*/
+
+
+.material-icons{
+    background-color: #91a0ad;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: x-large;
+    padding: 0;
+    align-items: center;
+    border: 0;
+
+  &:active, &:focus, &:visited, &:active:focus, &:hover{
+      outline: none;
+      background-color: #ffffff;
+      color: #49b4fc;
+    }
+  }
+
+/*.btn {
+  &:active, &:focus, &:visited, &:active:focus {
+    outline: none;
+  }
+  &.btn-icon {
+    background-color: transparent;
+    padding: 0;
+    color: #f5766c;
+    align-items: center;
+  }
+}*/
+
 .price-modal {
-  font-family: 'Rubik ', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: #adb6bf;
-  width: 400px;
+    font-family: 'Rubik ', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #adb6bf;
+    float: right;
+    width:188px;
+    height:auto;
+    background-color: red;
+    z-index: 1;
+
+    & .form-horizontal{
+      padding: 5px;
+    }
+    &.form-group .row{
+      padding: 0;
+      margin: 0;
+    }
 
 
 }
