@@ -55,6 +55,20 @@
       }
     }
   }
+
+  .valuation{
+    height: 100%;
+    .flex-horizontal{
+      order: 0;
+      flex: 1 1 auto;
+      align-self: stretch;
+      height: 50%;
+      .field-inner{
+        height: 100%;
+        flex-grow: 1;
+      }
+    }
+  }
 }
 
 .profile {
