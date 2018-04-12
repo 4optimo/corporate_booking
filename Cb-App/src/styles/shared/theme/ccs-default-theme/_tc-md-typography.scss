@@ -109,28 +109,7 @@ $background-item:#fff;
     color:$background-item !important;
   }
 }
-// Product background  colors ...........................................
 
-.hotel-color--product_background {
-  background-color: $hotel-color--product !important;
-  i ,p,&.chip span,span{
-    color: $background-item !important;
-  }
-}
-
-.insurance-color--product_background {
-  background-color: $insurance-color--product !important;
-  i ,p,&.chip span,span{
-    color: $background-item !important;
-  }
-}
-
-.car-color--product_background {
-  background-color: $car-color--product !important;
-  i,p,&.chip span,span{
-    color: $background-item !important;
-  }
-}
 
 .package-color--product_background {
   background-color: $package-color--product !important;
@@ -138,98 +117,6 @@ $background-item:#fff;
     color: $background-item !important;
   }
 }
-
-.flight-color--product_background {
-  background-color: $flight-color--product !important;
-  i,p ,&.chip span,span{
-    color: $background-item !important;
-  }
-}
-
-.generic-color--product_background {
-  background-color: $generic-color--product !important;
-  i ,p,&.chip span,span{
-    color: $background-item !important;
-  }
-}
-
-.transfer-color--product_background {
-  background-color: $transfer-color--product !important;
-  i ,p,&.chip span,span{
-    color: $background-item !important;
-  }
-}
-
-.tour-color--product_background {
-  background-color: $tour-color--product !important;
-  i ,p,&.chip span,span{
-    color: $background-item !important;
-  }
-}
-
-  // Product icons,font   colors ...........................................
-
-.hotel-color--product {
-
-  i {
-    color: $hotel-color--product !important;
-  }
-}
-
-.insurance-color--product {
-
-  i {
-    color: $insurance-color--product !important;
-  }
-}
-
-.car-color--product {
-
-  i {
-    color: $car-color--product !important;
-  }
-}
-
-.package-color--product {
-
-  i {
-    color: $package-color--product !important;
-  }
-}
-
-.flight-color--product {
-
-  i {
-    color: $flight-color--product !important;
-  }
-}
-
-.generic-color--product {
-
-  i {
-    color: $generic-color--product !important;
-  }
-}
-
-.transfer-color--product {
-
-  i {
-    color: $transfer-color--product !important;
-  }
-}
-
-.tour-color--product {
-
-  i {
-    color: $tour-color--product !important;
-  }
-}
-
-.txt-price--color,.txt-primary--color{
-  color: $central-brand-primary !important;
-
-}
-
 
 
 

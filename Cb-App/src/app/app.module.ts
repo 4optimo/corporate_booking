@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { BookingSummaryComponent } from './booking-summary/booking-summary.component';
+import { PricePopupComponent } from './price-popup/price-popup.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { BookingSummaryComponent } from './booking-summary/booking-summary.compo
     AppComponent,
     CardComponent,
     AlertsComponent,
-    BookingSummaryComponent
+    BookingSummaryComponent,
+    PricePopupComponent
   ],
   imports: [
     BrowserModule
