@@ -1,4 +1,6 @@
-.material-icons{
+
+
+  .btn-pp {
     background-color: #91a0ad;
     color: #ffffff;
     border-radius: 50%;
@@ -8,12 +10,15 @@
     border: 0;
     vertical-align: top;
 
-  &:active, &:focus, &:visited, &:active:focus, &:hover{
+    &:active, &:focus, &:visited, &:active:focus, &:hover{
       outline: none;
       background-color: #ffffff;
       color: #49b4fc;
     }
   }
+
+
+
 
 
 
