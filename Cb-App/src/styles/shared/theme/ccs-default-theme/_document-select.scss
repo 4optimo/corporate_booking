@@ -1,0 +1,51 @@
+@import "colors";
+
+
+
+.stripe-under{
+  height: 53px;
+  width: 949px;
+  background-color: $grey-300;
+  margin: 119px 0 0 37px;
+
+  .card{
+    height: 52px;
+    background-color: $white;
+  }
+
+  .stripe-up{
+    height: 3px;
+    background-color: $grey-300;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  background-color: $white;
+  padding: 5px;
+}
+
+.flex-item:nth-child(1) {
+  order: 0;
+  flex: 0 0 auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+  order: 0;
+  flex: 4 1 auto;
+  align-self: auto;
+}
+
+.flex-item:nth-child(3) {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+
