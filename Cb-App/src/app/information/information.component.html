@@ -2,7 +2,7 @@
 <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<div class="additional-info">
+<div class="opt--additional-info">
   <p class="font-style-08">Additional Information</p>
   <hr>
 
@@ -23,8 +23,12 @@
     </div>
     <div class="col-sm-4">
       <form class="example-form">
-        <mat-form-field class="example-full-width test">
-          <input matInput placeholder="British Pound-£" value="">
+        <mat-form-field class="example-full-width">
+          <mat-select placeholder="Currency" [(ngModel)]="selectedValue1" name="currency">
+            <mat-option *ngFor="let currency of currencys" [value]="currency.value">
+              {{currency.viewValue}}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
       </form>
     </div>
@@ -33,21 +37,33 @@
     <div class="col-sm-4">
       <form class="example-form">
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Sales Channel" value="">
+          <mat-select placeholder="Sales Channel" [(ngModel)]="selectedValue2" name="sales_channel">
+            <mat-option *ngFor="let sales_channel of sales_channels" [value]="sales_channel.value">
+              {{sales_channel.viewValue}}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
       </form>
     </div>
     <div class="col-sm-4">
       <form class="example-form">
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Source" value="">
+          <mat-select placeholder="Source" [(ngModel)]="selectedValue3" name="source">
+            <mat-option *ngFor="let source of sources" [value]="source.value">
+              {{source.viewValue}}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
-      </form>
+    </form>
     </div>
     <div class="col-sm-4">
       <form class="example-form">
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Function Sheet" value="Pending">
+          <mat-select placeholder="Function Sheet" [(ngModel)]="selectedValue4" name="function_sheet">
+            <mat-option *ngFor="let function_sheet of function_sheets" [value]="function_sheet.value">
+              {{function_sheet.viewValue}}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
       </form>
     </div>
@@ -55,23 +71,57 @@
   <div class="row font-style-07">
     <div class="col-sm-4">
       <form class="example-form">
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Cancellation Policy" value="">
-        </mat-form-field>
+        <div class="flex-container">
+          <div class="input">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Cancellation Policy" [(ngModel)]="selectedValue5" name="cancellation_policy">
+                <mat-option *ngFor="let cancellation_policy of cancellation_policys" [value]="cancellation_policy.value">
+                  {{cancellation_policy.viewValue}}
+                  <i class="material-icons">filter_list</i>
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="icon">
+            <button class="btn btn-icon"><i class="material-icons color small">filter_list</i></button>
+          </div>
+        </div>
       </form>
     </div>
     <div class="col-sm-4">
       <form class="example-form">
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Delivery Method" value="">
-        </mat-form-field>
+        <div class="flex-container">
+          <div class="input">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Delivery Method" [(ngModel)]="selectedValue6" name="delivery_method">
+                <mat-option *ngFor="let delivery_method of delivery_methods" [value]="delivery_method.value">
+                  {{delivery_method.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+            <div class="icon">
+              <button class="btn btn-icon"><i class="material-icons color small">filter_list</i></button>
+            </div>
+          </div>
       </form>
     </div>
     <div class="col-sm-4">
       <form class="example-form">
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Payment Terms" value="">
-        </mat-form-field>
+        <div class="flex-container">
+          <div class="input">
+            <mat-form-field class="example-full-width">
+              <mat-select placeholder="Payment Terms" [(ngModel)]="selectedValue7" name="payment_terms">
+                <mat-option *ngFor="let payment_terms of payment_termss" [value]="payment_terms.value">
+                  {{payment_terms.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="icon">
+            <button class="btn btn-icon"><i class="material-icons color small">filter_list</i></button>
+          </div>
+        </div>
       </form>
     </div>
   </div>
@@ -79,21 +129,33 @@
   <div class="col-sm-4">
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Reason" value="">
+        <mat-select placeholder="Reason" [(ngModel)]="selectedValue8" name="reason">
+          <mat-option *ngFor="let reason of reasons" [value]="reason.value">
+            {{reason.viewValue}}
+          </mat-option>
+        </mat-select>
       </mat-form-field>
     </form>
   </div>
   <div class="col-sm-4">
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Event Manager" value="">
+        <mat-select placeholder="Event Manager" [(ngModel)]="selectedValue9" name="event_manager">
+          <mat-option *ngFor="let event_manager of event_managers" [value]="event_manager.value">
+            {{event_manager.viewValue}}
+          </mat-option>
+        </mat-select>
       </mat-form-field>
     </form>
   </div>
   <div class="col-sm-4">
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Commercial" value="">
+        <mat-select placeholder="Commercial" [(ngModel)]="selectedValue10" name="commercial">
+          <mat-option *ngFor="let commercial of commercials" [value]="commercial.value">
+            {{commercial.viewValue}}
+          </mat-option>
+        </mat-select>
       </mat-form-field>
     </form>
   </div>
