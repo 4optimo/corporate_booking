@@ -11,10 +11,28 @@
 .opt_flex{
       &--container{
         @include flexbox();
+
       }
       &__item{
         @include align-self(auto);
         @include  flex(1 1 auto);
+
+        &-inherit{
+          flex-grow: inherit;
+        }
+        &.p25{
+          width: 25%;
+        }
+        &.p50{
+          width: 50%;
+        }
+        &.p75{
+          width: 75%;
+        }
+        &.p100{
+          width: 100%;
+        }
+
       }
 }
 
@@ -26,6 +44,7 @@
     @include align-content(stretch);
     @include align-items(flex-start);
     }
+
 
   // Add one of the following classes to any html element to achieve a desired depth of the shadow
 
@@ -52,5 +71,21 @@
 
 }
 
+//.circle-icon {
+//  @include circle-icon(40px,$ci-bg--color,$ci-col-hover );
+//  margin-right: 15px;
+//  display: block;
+//
+//  &.mat-component{
+//    background-color: transparent !important;
+//  }
+//
+//  p{
+//   padding-bottom: 0px;
+//   margin-bottom: auto;
+//   margin-top: auto;
+//   display: inline-flex;
+//  }
+//}
 
 

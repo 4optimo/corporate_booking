@@ -1,51 +1,52 @@
 @import "colors";
 
-
-
-.stripe-under{
-  height: 53px;
-  width: 949px;
-  background-color: $grey-300;
-  margin: 119px 0 0 37px;
-
-  .card{
-    height: 52px;
+.card{
     background-color: $white;
+    border-bottom: 1px solid $grey-300;
   }
 
-  .stripe-up{
-    height: 3px;
-    background-color: $grey-300;
+button{
+  margin: 14px;
+
+  &.btn-addTo {
+    background-color: $white;
+    color: $blue-400;
+    /*width: 83px;
+    height: 24px;*/
+    border: 1px solid $blue-400;
+    @include border-radius(4px);
+
+    &:active, &:focus, &:visited, &:active:focus, &:hover {
+      background-color: $blue-400;
+      color: $white;
+    }
+  }
+
+}
+
+.row{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: medium;
+
+  .opt_flex__item{
+    margin: 10px;
+  }
+
+  .doc-des{
+    color: $blue-grey-900;
+  }
+
+  .doc-sub{
+    color: $blue-grey-A400;
   }
 }
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: flex-start;
-  background-color: $white;
-  padding: 5px;
 
-}
 
-.flex-item:nth-child(1) {
-  order: 0;
-  flex: 0 0 auto;
-  align-self: auto;
-}
 
-.flex-item:nth-child(2) {
-  order: 0;
-  flex: 4 1 auto;
-  align-self: auto;
-}
 
-.flex-item:nth-child(3) {
-  order: 0;
-  flex: 1 1 auto;
-  align-self: auto;
-}
+
+
+
 
 
