@@ -1,13 +1,12 @@
-@import "colors";
+
 
 .card{
   background-color: $white;
   border-bottom: 1px solid $grey-300;
-  margin: 10px;
+  margin: 2px;
+  font-family: 'Rubik', sans-serif;
   .row{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: medium;
+
 
 
     .opt_flex__item{
