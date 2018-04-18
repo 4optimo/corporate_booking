@@ -1,38 +1,95 @@
-.additional-info{
+.opt--additional-info{
   padding: 30px 30px 30px 30px;
-}
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .example-full-width {
+    width: 100%;
+    //&.lower-width{
+    //  width: 90%;
+    //}
+  }
+
+  .font-style-08 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b414d;
+    padding-left: 15px;
+  }
+  .font-style-07 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333e47;
+  }
+
+  i {
+    //float: right;
+    margin-top: 15px;
+
+    &.material-icons {
+      transform: rotate(0.03deg);
+
+      &.x-small {
+        font-size: 16px;
+      }
+      &.small {
+        font-size: 25px;
+      }
+      &.medium {
+        font-size: 30px;
+      }
+      &.large {
+        font-size: 50px;
+      }
+      &.color {
+        color: #8d8d8d;
+      }
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    }
+  }
+
+  .input {
+    order: 0;
+    flex: 90%;
+    align-self: auto;
+  }
+
+  .icon {
+    order: 0;
+    //flex: 10%;
+    align-self: auto;
+    float: right;
+    //margin-top: 15px;
+  }
+  .btn {
+    &:active, &:focus, &:visited, &:active:focus {
+      outline: none;
+    }
+    &.btn-icon {
+      background-color: transparent;
+      padding: 0;
+      color: #f5766c;
+      align-items: center;
+    }
+  }
+
 hr{
   border-top: 3px solid #dce0e1;
 }
 
 
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.example-full-width {
-  width: 100%;
-}
-
-.font-style-08 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #3b414d;
-  padding-left: 15px;
-}
-.font-style-07 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #333e47;
-}
-
-.test{
-
-    textarea{
-      color:blue !important;
-    }
-}
