@@ -4,4 +4,47 @@
 // Typography
 $font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
 $font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
+$font-family-rubik: 'Rubik', sans-serif;
+
+
+
 $prefix :'opt_';
+$ci-bg--color:red;
+$ci-col-hover:green;
+$primary:blue;
+
+//state colors..............
+$no-color--state: $red-700 !default;
+$active-color--state: $green-700 !default;
+$mute-color--state: $grey-700 !default;
+$firm-color--state: $blue-700 !default;
+$alert-color--state: $yellow-700 !default;
+$definite-color--state: $blue-grey-700 !default;
+$quote-color--state: $brown-700 !default;
+
+$accent:#2196F3 !default;
+$central-brand-primary :red;
+$white-color:#fff;
+
+
+//Product  colors
+$hotel-color--product: $purple !default;
+$insurance-color--product: $yellow-700 !default;
+$car-color--product: $light-blue-700 !default;
+$package-color--product: $brown-700 !default;
+$flight-color--product: $blue-700 !default;
+$generic-color--product: $orange-700 !default;
+$transfer-color--product: $green-700 !default;
+$tour-color--product: $red-700 !default;
+
+
+//Header and Summary Header
+$central-header: $central-brand-primary;
+$central-header-content-color: $white-color;
+$central-summary-header: #f9f9f9 !default;
+$central-content-body-color: $white-color !default;
+
+$central-page-summery-lbl-border-color: #d6d6d6 !default;
+
+$font-color:                 #66615b !default;
+

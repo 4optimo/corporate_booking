@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+
 import { CardComponent } from './card.component';
+//import { CardComponent } from '@angular/core';
+
 
 describe('CardComponent', () => {
   let component: CardComponent;
@@ -23,3 +26,7 @@ describe('CardComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
+
+

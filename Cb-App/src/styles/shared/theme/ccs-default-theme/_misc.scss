@@ -8,14 +8,94 @@
 
 }
 
+// flex grid ........................
 .opt_flex{
       &--container{
         @include flexbox();
+
+         &.space-between{
+           justify-content: space-between !important;
+         }
+
+
+
       }
       &__item{
         @include align-self(auto);
         @include  flex(1 1 auto);
+
+        &-inherit{
+          flex-grow: inherit;
+        }
+
+
+        &.p25{
+          width: 25%;
+        }
+        &.p50{
+          width: 50%;
+        }
+        &.p75{
+          width: 75%;
+        }
+        &.p100{
+          width: 100%;
+        }
       }
+}
+
+.tc-flex-item__center{
+  align-self: center !important;
+  align-items: center;
+}
+
+
+
+.opt_flex__row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: stretch;
+
+  .opt_flex--container {
+    height: 100%;
+    align-items: center;
+  }
+
+  [class^="col-"], [class*=" col-"] {
+
+    height: 100%;
+  }
+
+
+}
+
+
+.tc-flex-item__justify_center{
+  align-items: center;
+  justify-content: center;
+}
+
+
+// list  circle icon
+.circle-icon {
+  @include circle-icon(40px,$ci-bg--color,$ci-col-hover );
+  margin-right: 15px;
+  display: block;
+
+  &.mat-component{
+    background-color: transparent !important;
+  }
+
+  p{
+    /* padding-bottom: 0px; */
+    margin-bottom: auto;
+    /* margin-top: auto; */
+    display: inline-flex;
+  }
+
 }
 
 .opt{
@@ -53,4 +133,10 @@
 }
 
 
+.icon-icn-package:before {
+  content: "\e900";
+}
 
+.icn-opt__small{
+  font-size: 20px;
+}
