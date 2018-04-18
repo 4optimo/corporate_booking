@@ -1,0 +1,52 @@
+@import "colors";
+
+.card{
+    background-color: $white;
+    border-bottom: 1px solid $grey-300;
+  }
+
+button{
+  margin: 14px;
+
+  &.btn-addTo {
+    background-color: $white;
+    color: $blue-400;
+    /*width: 83px;
+    height: 24px;*/
+    border: 1px solid $blue-400;
+    @include border-radius(4px);
+
+    &:active, &:focus, &:visited, &:active:focus, &:hover {
+      background-color: $blue-400;
+      color: $white;
+    }
+  }
+
+}
+
+.row{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: medium;
+
+  .opt_flex__item{
+    margin: 10px;
+  }
+
+  .doc-des{
+    color: $blue-grey-900;
+  }
+
+  .doc-sub{
+    color: $blue-grey-A400;
+  }
+}
+
+
+
+
+
+
+
+
+

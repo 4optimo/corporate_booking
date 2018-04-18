@@ -1,0 +1,25 @@
+$ci-size:50px;
+$ci-bg--color:red;
+$ci-col-hover:green;
+
+@mixin circle-icon($ci-size,$ci-bg--color,$ci-col-hover) {
+  width: $ci-size;
+  height: $ci-size;
+  background-color:$ci-bg--color;
+  line-height: $ci-size;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+
+  i.material-icons{
+    line-height:$ci-size;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      line-height: 44px;
+    }
+    color:#fff;
+  }
+
+  &:hover{
+    background-color:$ci-col-hover;
+  }
+}
