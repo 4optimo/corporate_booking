@@ -1,0 +1,101 @@
+
+<div class="opt_booking__detail">
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header [expandedHeight]="'50px'" class="opt_expand__header" >
+      <div class="row opt_flex__row ">
+        <div class="col-lg-4">
+        <div class="opt_flex--container tc-flex-item__center">
+
+          <div class="opt_flex__item opt_booking__detail-checkbox ">
+            <mat-checkbox></mat-checkbox>
+          </div>
+
+          <div class="opt_flex__item opt_booking__detail-checkbox_details ">
+            <div class="opt-txt__body2 ">BTX16L4 - Premier Dinner & Eye</div>
+            <div class="opt_flex--container tc-flex-item__center">
+
+              <div class="opt_flex__item opt_flex__item-inherit" >
+              <span class="icon-icn-package icn-opt__small"></span>
+              </div>
+              <div class="opt_flex__item opt_flex__item-inherit" >
+                <span class="icon-icn-package icn-opt__small"></span>
+              </div>
+              <div class="opt_flex__item opt_flex__item-inherit  opt-txt__caption" >18-jan-2018</div>
+              <div class="opt_flex__item opt_flex__item-inherit opt-txt__caption" >Event Name</div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="opt_flex--container space-between">
+            <div class="opt_flex__item opt_flex__item-inherit " >
+              <div class="opt-txt__body1 "> Covers</div>
+            </div>
+            <div class="opt_flex__item opt_flex__item-inherit " >
+              <div class="tc-body2--txt ">
+
+                <div class="opt_flex__item opt_flex__item-inherit  opt-txt__caption __link" >18-jan-2018</div>
+                <div class="opt_flex__item opt_flex__item-inherit opt-txt__caption __link" >Event Name</div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="opt_flex--container space-between">
+            <div class="opt_flex__item opt_flex__item-inherit " >
+              <div class="opt-txt__body1 "> Covers</div>
+            </div>
+            <div class="opt_flex__item opt_flex__item-inherit " >
+              <div class="tc-body2--txt ">
+
+                <div class="opt_flex__item opt_flex__item-inherit   " >
+
+                  <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                      <input matInput  value="£19875.89">
+                    </mat-form-field>
+
+
+                  </form>
+
+
+                </div>
+                <div class="opt_flex__item opt_flex__item-inherit opt-txt__caption __link" >GST</div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Self aware panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+</mat-accordion>
+</div>

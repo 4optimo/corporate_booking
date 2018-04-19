@@ -6,43 +6,20 @@ import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
 import 'hammerjs';
 import 'web-animations-js';
-
+import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import { MatInputModule, MatButtonModule, MatSelectModule, MatTabsModule, MatCardModule, MatIcon, MatTabGroup} from '@angular/material';
+
 import { FormsModule,ReactiveFormsModule} from "@angular/forms";
 import {
-  MatAutocompleteModule,
   MatButtonModule,
-  MatButtonToggleModule,
   MatCardModule,
-  MatCheckboxModule,
-  MatChipsModule,
-  MatDatepickerModule,
-  MatDialogModule,
-  MatDividerModule,
-  MatExpansionModule,
-  MatGridListModule,
   MatIconModule,
   MatInputModule,
-  MatListModule,
-  MatMenuModule,
-  MatNativeDateModule,
-  MatPaginatorModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRadioModule,
-  MatRippleModule,
   MatSelectModule,
-  MatSidenavModule,
-  MatSliderModule,
-  MatSlideToggleModule,
-  MatSnackBarModule,
-  MatSortModule,
-  MatStepperModule,
-  MatTableModule,
   MatTabsModule,
-  MatToolbarModule,
-  MatTooltipModule,
+  MatExpansionModule,
+  MatCheckboxModule,
+
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -51,7 +28,8 @@ import { AlertsComponent } from './alerts/alerts.component';
 import { BookingSummaryComponent } from './booking-summary/booking-summary.component';
 import { PricePopupComponent } from './price-popup/price-popup.component';
 import { InformationComponent } from './information/information.component';
-import { TabPanelComponent } from './tab-panel/tab-panel.component';
+import { BookingDetailComponent } from './booking-detail/booking-detail.component';
+
 
 @NgModule({
   declarations: [
@@ -61,7 +39,8 @@ import { TabPanelComponent } from './tab-panel/tab-panel.component';
     BookingSummaryComponent,
     PricePopupComponent,
     InformationComponent,
-    TabPanelComponent
+    BookingDetailComponent,
+
   ],
    imports: [
      BrowserModule,
@@ -74,7 +53,9 @@ import { TabPanelComponent } from './tab-panel/tab-panel.component';
      MatIconModule,
      MatCardModule,
      MatTabsModule,
-     ReactiveFormsModule
+     MatExpansionModule,
+     ReactiveFormsModule,
+     MatCheckboxModule,
 
   ],
   providers: [],
