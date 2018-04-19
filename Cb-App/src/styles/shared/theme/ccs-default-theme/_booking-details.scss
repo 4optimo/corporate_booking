@@ -1,0 +1,49 @@
+.opt {
+  &_booking__detail {
+
+    .mat-input-wrapper {
+      &.mat-form-field-wrapper{
+        padding-bottom: 0px !important;
+      }
+
+    }
+    .mat-input-infix{
+      .mat-form-field-infix{
+        padding: 0px !important;
+        border-top: 1px solid transparent !important;
+      }
+    }
+
+    .mat-form-field-infix {
+      padding: 1px  !important;
+      border-top: 1px  !important;
+    }
+
+    .mat-form-field-underline {
+      bottom: 0px !important;
+    }
+
+    &-checkbox{
+        width: 50px;
+
+      }
+    &-checkbox_details{
+      width: calc(100% - 50px)
+
+    }
+
+  }
+
+  &_expand__header{
+
+
+    .row{
+      width: 100%;
+    }
+
+  }
+
+}
+
+
+

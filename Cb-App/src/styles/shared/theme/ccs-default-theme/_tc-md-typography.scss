@@ -11,6 +11,7 @@ $darker: darken($color-base,30%);
 
 body{
   color:$base-text-color ;
+  font-family: $font-family-rubik;
 }
 
 //circle-icon defalt colors
@@ -21,7 +22,7 @@ $background-item:#fff;
 // state background colors ...........................................
 
 
-.no-color--state_background{
+.no-color__state_background{
  background-color:$no-color--state  !important;
   i,p,&.chip span,span{
     color:$background-item !important;
@@ -127,39 +128,37 @@ overflow: hidden;
 text-overflow: ellipsis;
 }
 
-.tc-txt-underline{
+.opt-txt__underline{
   text-decoration: underline;
 }
-.tc-txt-line--through{
+.opt-txt__line-through{
   text-decoration: line-through;
 }
-.tc-txt-line--overline{
+.opt-txt__line-overline{
   text-decoration: overline;
 }
 
-.tc-txt-white-space-normal{
+.opt-txt__white-space-normal{
   overflow-wrap: inherit;
   white-space: inherit;
 }
 
-.txt{
-  &-light {
+.opt-txt{
+  &__light {
     color: $light; //black 60%
   }
-  &-dark {
+  &__dark {
     color: $dark; //black
   }
-  &-lighter {
+  &__lighter {
     color: $lighter;
   }
-  &-darker {
+  &__darker {
     color: $darker;
   }
-
-  &-align-right {
+  &__align-right {
    text-align: right;
   }
-
 
 }
 
@@ -180,12 +179,12 @@ fieldset.demo{
       padding: 0;
     }
 
-     h1.tc-heading--1 small,   h2.tc-heading--2 small, h3.tc-heading--3 small, h4.tc-heading--4 small,   h5.tc-heading--5 small, h6.tc-heading--6 small {
+     h1.opt__heading-1 small,   h2.opt__heading-2 small, h3.opt__heading-3 small, h4.opt__heading-4 small,   h5.opt__heading-5 small, h6.opt__heading-6 small {
       @include typo-display-3($colorContrast: false);
       font-size: 0.6em;
     }
 
-  h1.tc-heading--1 {
+  h1.opt__heading-1 {
   @include typo-display-3;
 
     margin-top: 24px;
@@ -193,41 +192,41 @@ fieldset.demo{
     @extend %tc-ellipsis;
   }
 
-  h2.tc-heading--2 {
+  h2.opt__heading-2 {
     @include typo-display-2;
     margin-top: 24px;
     margin-bottom: 24px;
   }
 
-  h3.tc-heading--3 {
+  h3.opt__heading-3 {
     @include typo-display-1;
 
     margin-top: 24px;
     margin-bottom: 24px;
   }
 
-  h4.tc-heading--4 {
+  h4.opt__heading-4 {
     @include typo-headline;
 
     margin-top: 24px;
     margin-bottom: 16px;
   }
 
-  h5.tc-heading--5 {
+  h5.opt__heading-5 {
     @include typo-title;
 
     margin-top: 24px;
     margin-bottom: 16px;
   }
 
-  .tc-heading--title {
+  .opt__heading-title {
     @include typo-title;
 
     margin-top: 24px;
     margin-bottom: 16px;
   }
 
-  h6.tc-heading--6 {
+  h6.opt__heading-6 {
     @include typo-subhead;
 
     margin-top: 24px;
@@ -245,29 +244,38 @@ p {
   margin-bottom: 16px;
 }
 
-.tc-heading--caption {
+.opt__heading__caption {
       @include typo-caption;
       font-style: normal;
       color: #9c28b1;
    }
-.tc-caption-txt{
+.opt-txt__caption{
   @include typo-caption;
   font-style: normal;
+
+  &.__link{
+    @include typo-caption;
+    font-style: normal;
+    line-height: 1.5;
+
+    text-decoration: underline;
+  }
 }
 
-.tc-body2--txt{
+
+.opt-txt__body2{
   @include typo-body-2;
   @extend %tc-ellipsis;
 
 }
 
-.tc-body1--txt{
+.opt-txt__body1{
   @include typo-body-1;
   @extend %tc-ellipsis;
   //margin-bottom: 10px;
 }
 
-.tc-body1--txt-large{
+.opt-txt__body1-large{
   @include typo-subhead;
   @extend %tc-ellipsis;
   color: $central-brand-primary;

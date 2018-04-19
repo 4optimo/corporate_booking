@@ -1,23 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { BookingDetailComponent } from './booking-detail.component';
 
-import { CardComponent } from './card.component';
-//import { CardComponent } from '@angular/core';
-
-
-describe('CardComponent', () => {
-  let component: CardComponent;
-  let fixture: ComponentFixture<CardComponent>;
+describe('BookingDetailComponent', () => {
+  let component: BookingDetailComponent;
+  let fixture: ComponentFixture<BookingDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardComponent ]
+      declarations: [ BookingDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CardComponent);
+    fixture = TestBed.createComponent(BookingDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -26,7 +23,3 @@ describe('CardComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
-
-
-
