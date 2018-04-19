@@ -1,64 +1,50 @@
+.container{
+  &.documentSelect {
 
+    .card-ds {
+      background-color: $white;
+      border-bottom: 1px solid $grey-300;
+      margin: 2px;
+      font-family: 'Rubik', sans-serif;
+      .row {
 
-.card{
-  background-color: $white;
-  border-bottom: 1px solid $grey-300;
-  margin: 2px;
-  font-family: 'Rubik', sans-serif;
-  .row{
+        .opt_flex__item {
+          margin: 10px;
+        }
 
+        .doc-des {
+          color: $blue-grey-900;
+        }
 
-
-    .opt_flex__item{
-      margin: 10px;
-    }
-
-    .doc-des{
-      color: $blue-grey-900;
-    }
-
-    .doc-sub{
-      color: $blue-grey-A400;
-    }
-  }
-}
-
-
-
-.btn-addTo {
-  background-color: $white;
-  color: $blue-400;
-  width: 25%;
-  border: 1px solid $blue-400;
-  @include border-radius(4px);
-  padding: 5px;
-  margin: 14px;
-
-    &:active, &:focus, &:visited, &:active:focus, &:hover {
-      background-color: $blue-400;
-      color: $white;
-    }
-  }
-
-
-nav{
-    ul{
-     li{
-      a{
-        border-radius: 50%;
+        .doc-sub {
+          color: $blue-grey-A400;
+        }
       }
     }
+
+    .btn-addTo {
+      background-color: $white;
+      color: $blue-400;
+      width: 25%;
+      border: 1px solid $blue-400;
+      @include border-radius(4px);
+      padding: 5px;
+      margin: 14px;
+
+      &:active, &:focus, &:visited, &:active:focus, &:hover {
+        background-color: $blue-400;
+        color: $white;
+      }
+    }
+
+    /*nav {
+      ul {
+        li {
+          a {
+            border-radius: 50%;
+          }
+        }
+      }
+    }*/
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-

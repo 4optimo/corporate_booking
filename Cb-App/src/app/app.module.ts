@@ -29,6 +29,7 @@ import { BookingSummaryComponent } from './booking-summary/booking-summary.compo
 import { PricePopupComponent } from './price-popup/price-popup.component';
 import { InformationComponent } from './information/information.component';
 import { BookingDetailComponent } from './booking-detail/booking-detail.component';
+import { DocumentSelectComponent } from './document-select/document-select.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { BookingDetailComponent } from './booking-detail/booking-detail.componen
     PricePopupComponent,
     InformationComponent,
     BookingDetailComponent,
+    DocumentSelectComponent,
 
   ],
    imports: [
