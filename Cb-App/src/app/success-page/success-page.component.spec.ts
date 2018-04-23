@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DocumentUploadComponent } from './document-upload.component';
+import { SuccessPageComponent } from './success-page.component';
 
-describe('DocumentUploadComponent', () => {
-  let component: DocumentUploadComponent;
-  let fixture: ComponentFixture<DocumentUploadComponent>;
+describe('SuccessPageComponent', () => {
+  let component: SuccessPageComponent;
+  let fixture: ComponentFixture<SuccessPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DocumentUploadComponent ]
+      declarations: [ SuccessPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DocumentUploadComponent);
+    fixture = TestBed.createComponent(SuccessPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
