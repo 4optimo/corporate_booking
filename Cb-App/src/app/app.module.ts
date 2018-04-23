@@ -30,6 +30,7 @@ import { PricePopupComponent } from './price-popup/price-popup.component';
 import { InformationComponent } from './information/information.component';
 import { BookingDetailComponent } from './booking-detail/booking-detail.component';
 import { DocumentSelectComponent } from './document-select/document-select.component';
+import { DocumentUploadComponent } from './document-upload/document-upload.component';
 
 
 @NgModule({
@@ -42,22 +43,23 @@ import { DocumentSelectComponent } from './document-select/document-select.compo
     InformationComponent,
     BookingDetailComponent,
     DocumentSelectComponent,
+    DocumentUploadComponent,
 
   ],
-   imports: [
-     BrowserModule,
-     BrowserAnimationsModule,
-     FormsModule,
-     MatButtonModule,
-     MatInputModule,
-     MatTabsModule,
-     MatSelectModule,
-     MatIconModule,
-     MatCardModule,
-     MatTabsModule,
-     MatExpansionModule,
-     ReactiveFormsModule,
-     MatCheckboxModule,
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatTabsModule,
+    MatSelectModule,
+    MatIconModule,
+    MatCardModule,
+    MatTabsModule,
+    MatExpansionModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
 
   ],
   providers: [],
