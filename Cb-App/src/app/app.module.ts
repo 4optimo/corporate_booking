@@ -9,6 +9,7 @@ import 'web-animations-js';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+
 import { FormsModule,ReactiveFormsModule} from "@angular/forms";
 import {
   MatButtonModule,
@@ -30,7 +31,8 @@ import { PricePopupComponent } from './price-popup/price-popup.component';
 import { InformationComponent } from './information/information.component';
 import { BookingDetailComponent } from './booking-detail/booking-detail.component';
 import { DocumentSelectComponent } from './document-select/document-select.component';
-import { DocumentUploadComponent } from './document-upload/document-upload.component';
+
+import { SuccessPageComponent } from './success-page/success-page.component';
 
 
 @NgModule({
@@ -43,7 +45,7 @@ import { DocumentUploadComponent } from './document-upload/document-upload.compo
     InformationComponent,
     BookingDetailComponent,
     DocumentSelectComponent,
-    DocumentUploadComponent,
+    SuccessPageComponent,
 
   ],
   imports: [
